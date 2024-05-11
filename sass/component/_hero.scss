@@ -1,0 +1,41 @@
+.section-hero{
+    background-color: #2F303A ;
+    padding: 200px 0;
+    flex-wrap: wrap;
+    background-image: linear-gradient( to right , rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../images/img10.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.section-hero_title {
+    font-size: 44px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.36;
+    letter-spacing: 2.64px;
+    
+    color:var(--web-studio-white);
+    margin-bottom: 30px;
+}
+
+.button-hero {
+    color:var(--web-studio-white);
+    margin: 0 auto;
+        border: none;
+        border-radius: 4px;
+    font-size: 16px;
+font-weight: 700;
+letter-spacing: 0.96px;
+width: 216px;
+height: 50px;
+background: #2196F3;
+padding-top: 10px;
+padding-bottom: 10px;
+
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+
+
+}
+

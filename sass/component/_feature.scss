@@ -1,0 +1,52 @@
+.features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.features-list-item::before {
+    content: "";
+    display: inline-block;
+    width: 270px;
+    height: 120px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--team);
+    border-radius: 4px;
+    /* margin-bottom: 3opx; */
+
+}
+.features-list-item:nth-child(1)::before{
+    background-image: url(../images/antenna1.svg);
+}
+.features-list-item:nth-child(2)::before{
+    background-image: url(../images/clock1.svg);
+}
+.features-list-item:nth-child(3)::before{
+    background-image: url(../images/diagram1.svg);
+}
+.features-list-item:nth-child(4)::before{
+    background-image: url(../images/astronaut1.svg);
+}
+.features-list {
+ 
+ display: flex;
+ gap: 30px;
+ 
+}
+.features-list-title {
+    
+    color: var(--title);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.42px;
+text-transform: uppercase;
+margin-bottom: 10px;
+margin-top: 30px;
+
+}
+.features-list-description {
+    
+    color: var(--text);
+
+    line-height: 2;
+    letter-spacing: 0.42px;
+}
