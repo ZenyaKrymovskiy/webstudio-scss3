@@ -1,4 +1,4 @@
-.social-network-title{
+.footer-join__title{
     font-family: "Roboto", sans-serif;
 font-weight: 700;
 font-size: 14px;
@@ -8,14 +8,14 @@ color: var(--web-studio-white);
 margin-bottom: 23px;
 }
 
-.footer-list{
+.networks-list{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
-.footer-list-item{
+.networks-list__item{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +25,7 @@ margin-bottom: 23px;
     height: 44px;
     transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-svg{
+.networks-list__icon{
     width: 20px;
     height: 20px;
     fill: var(--web-studio-white);
@@ -33,7 +33,7 @@ margin-bottom: 23px;
 }
 
 
-.footer-list-item:hover{
+.networks-list__item:hover{
     background-color: var(--web-studio-blue);
     border-radius: 50%;
 }

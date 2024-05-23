@@ -1,17 +1,17 @@
 
-.footer-right-form{
+.footer-subscribe__form{
     display: flex;
   
   align-items: flex-end;
 }
-.footer-right-title{
+.footer-subscribe__title{
     font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--web-studio-white);
     margin-bottom: 20px;
 }
-.footer-right-input{
+.footer-subscribe__input{
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     width: 358px;
@@ -29,7 +29,7 @@
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: rgba(33, 150, 243, 0);
 }
-.footer-right-btn{
+.footer-subscribe__btn{
    
     display: flex;
     justify-content: center;
@@ -45,7 +45,7 @@
     background-color: var(--web-studio-blue);
     
 }
-.footer-right-svg{
+.footer-subscribe__svg{
     width: 21px;
     height: 21px;
    

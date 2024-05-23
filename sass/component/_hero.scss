@@ -1,4 +1,4 @@
-.section-hero{
+.hero{
     background-color: #2F303A ;
     padding: 200px 0;
     flex-wrap: wrap;
@@ -6,8 +6,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
-.section-hero_title {
+
+.hero__title {
     font-size: 44px;
     font-weight: 900;
     text-transform: uppercase;
@@ -19,7 +19,7 @@
     margin-bottom: 30px;
 }
 
-.button-hero {
+.hero__btn {
     color:var(--web-studio-white);
     margin: 0 auto;
         border: none;
@@ -38,4 +38,4 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
 
 }
-
+}
