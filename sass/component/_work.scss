@@ -3,17 +3,19 @@
     justify-content: center;
     padding-bottom: 94px;
     
-}
-.work-list {
-    display: flex;
-    gap: 30px;
-}
-.work__title {
+
+&__title {
     text-align: center;
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 50px;
 }
+}
+.work-list {
+    display: flex;
+    gap: 30px;
+}
+
 .work-list__image {
     width: 370px;
     height: 294px;
@@ -23,7 +25,7 @@
     
    
 }
-.thumb{
+.work-list__thumb{
     position: relative;
 }
 .work-list__label{

@@ -7,7 +7,7 @@
     background-position: center;
     background-size: cover;
 
-.hero__title {
+&__title {
     font-size: 44px;
     font-weight: 900;
     text-transform: uppercase;
@@ -15,12 +15,12 @@
     line-height: 1.36;
     letter-spacing: 2.64px;
     
-    color:var(--web-studio-white);
+    color:getColor("studio-white");;
     margin-bottom: 30px;
 }
 
-.hero__btn {
-    color:var(--web-studio-white);
+&__btn {
+    color:getColor("studio-white");;
     margin: 0 auto;
         border: none;
         border-radius: 4px;

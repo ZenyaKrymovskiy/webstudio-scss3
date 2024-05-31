@@ -9,7 +9,7 @@
     height: 120px;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: var(--team);
+    background-color: getColor("team");
     border-radius: 4px;
     /* margin-bottom: 3opx; */
 
@@ -31,10 +31,10 @@
  display: flex;
  gap: 30px;
  
-}
-.features-list__title {
+
+&__title {
     
-    color: var(--title);
+    color: getColor("title");
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.42px;
@@ -43,10 +43,11 @@ margin-bottom: 10px;
 margin-top: 30px;
 
 }
-.features-list__description {
+&__description {
     
-    color: var(--text);
+    color: getColor("text");;
 
     line-height: 2;
     letter-spacing: 0.42px;
+}
 }

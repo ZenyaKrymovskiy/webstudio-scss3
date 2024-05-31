@@ -24,27 +24,33 @@
     <title>Document</title>
   </head>
   <body>
+   
+    
+   
     <header class="header">
       <div class="container">
-        <a href="./index.html" class="logo animate__animated animate__flash ">Web<span class="black-logo animate__animated animate__flash " >Studio</span></a>
+        <div class="header-spacer">
+        <a href="./portfolio.html" class="logo header-spacer__logo animate__animated animate__flash ">Web<span class=" header-spacer__logo  header-spacer__logo--studio  animate__animated animate__flash " >Studio</span></a>
         <nav class="navigation">
-          <ul class="navigation__list">
+          <ul class="navigation-list">
             <li class="navigation-list__item">
               <a href="../index.html" class="navigation-list__link">Студія</a>
             </li>
             <li class="navigation-list__item">
-              <a href="./portfolio.html" class="navigation-list__link">Портфоліо</a>
+              <a href="./pages/portfolio.html" class="navigation-list__link">Портфоліо</a>
             </li>
             <li class="navigation-list__item">
               <a href="#" class="navigation-list__link">Контакти</a>
             </li>
           </ul>
         </nav>
+     
+      </div>
 <div class="header-contacts">
-    <ul class="header-contacts__list">
+    <ul class="header-contacts-list">
         <li class="header-contacts-list__item">
           <a href="mailto:info@devstudio.com" class="header-con-li__link">
-             <svg width="16" height="12"  class="header-con_svg">
+             <svg width="16" height="12"  class="header-contacts-list__svg">
           <use href="../images/icons/symbol-defs.svg#icon-vector5"></use>
         </svg> info@devstudio.com
       </a>
@@ -52,7 +58,7 @@
         <li class="header-contacts-list__item">
           <a href="tel:+380961111111" class="header-con-li__link">  
             
-            <svg  width="10" height="16" class="header-con_svg">
+            <svg  width="10" height="16" class="header-contacts-list__svg">
               <use href="../images/icons/symbol-defs.svg#icon-vector4"></use>
             </svg>
             +38 096 111 11 11
@@ -63,28 +69,27 @@
        
 </div>
       </div>
-    </header>
     
-
+    </header>
     <main class="main">
       <div class="container">
         <section class="our-portfolio"> 
           <div class="filters">
-            <button type="button" class="button__filter   ">Усі</button>
-            <button type="button" class="button__filter  ">Веб-сайти</button>
-            <button type="button" class="button__filter  ">Додатки</button>
-            <button type="button" class="button__filter  ">Дизайн</button>
-            <button type="button" class="button__filter  ">Маркетинг</button>
+            <button type="button" class="button__filter">Усі</button>
+            <button type="button" class="button__filter">Веб-сайти</button>
+            <button type="button" class="button__filter">Додатки</button>
+            <button type="button" class="button__filter">Дизайн</button>
+            <button type="button" class="button__filter">Маркетинг</button>
           </div>
           <ul class="our-portfolio-list">
             <li class="our-portfolio-list__item">
-              <div class="thumb">
+              <div class="our-portfolio-list__thumb">
                 <img
                   src="../images/image1.jpg"
                   alt="laptop"
                   class="our-portfolio-list__img"
                 />
-                <div class="portfolio__overlay">
+                <div class="our-portfolio-overlay">
                   <p class="our-portfolio-overlay__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -96,13 +101,13 @@
               <p class="our-portfolio-list__description">Веб-сайт</p>
             </li>
             <li class="our-portfolio-list__item">
-              <div class="thumb">
+              <div class="our-portfolio-list__thumb">
                 <img
                   src="../images/img2.jpg"
                   alt="poster"
                   class="our-portfolio-list__img"
                 />
-                <div class="portfolio__overlay">
+                <div class=" our-portfolio-overlay">
                   <p class="our-portfolio-overlay__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -116,13 +121,13 @@
               <p class="our-portfolio-list__description">Дизайн</p>
             </li>
             <li class="our-portfolio-list__item">
-              <div class="thumb">
+              <div class="our-portfolio-list__thumb">
                 <img
                   src="../images/img3.jpg"
                   alt="cafe Seafood"
                   class="our-portfolio-img"
                 />
-                <div class="portfolio__overlay">
+                <div class="our-portfolio-overlay">
                   <p class="our-portfolio-overlay__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -134,13 +139,13 @@
               <p class="our-portfolio-list__description">Додаток</p>
             </li>
             <li class="our-portfolio-list__item">
-              <div class="thumb">
+              <div class="our-portfolio-list__thumb">
                 <img
                   src="../images/img4.jpg"
                   alt="headphones"
                   class="our-portfolio-list__img"
                 />
-                <div class="portfolio__overlay">
+                <div class="our-portfolio-overlay">
                   <p class="our-portfolio-overlay__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -152,13 +157,13 @@
               <p class="our-portfolio-list__description">Маркетинг</p>
             </li>
             <li class="our-portfolio-list__item">
-              <div class="thumb">
+              <div class="our-portfolio-list__thumb">
                 <img
                   src="../images/img5.jpg"
                   alt="box"
                   class="our-portfolio-list__img"
                 />
-                <div class="portfolio__overlay">
+                <div class="our-portfolio-overlay">
                   <p class="our-portfolio-overlay__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -170,13 +175,13 @@
               <p class="our-portfolio-list__description">Додаток</p>
             </li>
             <li class="our-portfolio-list__item">
-              <div class="thumb">
+              <div class="our-portfolio-list__thumb">
                 <img
                   src="../images/img6.jpg"
                   alt="macbook"
                   class="our-portfolio-list__img"
                 />
-                <div class="portfolio__overlay">
+                <div class="our-portfolio-overlay">
                   <p class="our-portfolio-overlay__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -190,13 +195,13 @@
               <p class="our-portfolio-list__description">Веб-сайт</p>
             </li>
             <li class="our-portfolio-list__item">
-              <div class="thumb">
+              <div class="our-portfolio-list__thumb">
                 <img
                   src="../images/img7.jpg"
                   alt="Journal"
                   class="our-portfolio-list__img"
                 />
-                <div class="portfolio__overlay">
+                <div class="our-portfolio-overlay">
                   <p class="our-portfolio-overlay__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -208,13 +213,13 @@
               <p class="our-portfolio-list__description">Дизайн</p>
             </li>
             <li class="our-portfolio-list__item">
-              <div class="thumb">
+              <div class="our-portfolio-list__thumb">
                 <img
                   src="../images/img8.jpg"
                   alt="LAB"
                   class="our-portfolio-list__img"
                 />
-                <div class="portfolio__overlay">
+                <div class="our-portfolio-overlay">
                   <p class="our-portfolio-overlay__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -226,13 +231,13 @@
               <p class="our-portfolio-list__description">Маркетинг</p>
             </li>
             <li class="our-portfolio-list__item">
-              <div class="thumb">
+              <div class="our-portfolio-list__thumb">
                 <img
                   src="../images/img9.jpg"
                   alt="business"
                   class="our-portfolio-list__img"
                 />
-                <div class="portfolio__overlay">
+                <div class="our-portfolio-overlay">
                   <p class="our-portfolio-overlay__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -249,6 +254,7 @@
     </main>
    
     
+   
     <footer class="footer">
       <div class="container">
         <section class="footer-contacts">
@@ -267,31 +273,31 @@
       </section>
         <section class="footer-join">
         <h3 class="footer-join__title">приєднуйтесь</h3>
-        <ul class="networks-list">
-          <li class="networks-list__item">
-           <a href="#" class="networks-list__link">
-            <svg class="networks-list__icon" >
+        <ul class="social-networks-list">
+          <li class="social-networks-list__item">
+           <a href="#" class="social-networks-list__link">
+            <svg class="social-networks-list__icon" >
               <use href="../images/icons/symbol-defs.svg#icon-instagram2"></use>
             </svg>
            </a>
           </li>
-          <li class="networks-list__item">
-            <a href="#" class="networks-list__link">
-              <svg class="networks-list__icon" >
+          <li class="social-networks-list__item">
+            <a href="#" class="social-networks-list__link networks-list__link--join">
+              <svg class="social-networks-list__icon" >
                 <use href="../images/icons/symbol-defs.svg#icon-twitter1"></use>
               </svg>
             </a>
           </li>
-          <li class="networks-list__item">
-            <a href="#" class="networks-list__link">
-              <svg class="networks-list__icon" >
+          <li class="social-networks-list__item">
+            <a href="#" class="social-networks-list__link networks-list__link--join">
+              <svg class="social-networks-list__icon" >
                 <use href="../images/icons/symbol-defs.svg#icon-facebook1"></use>
               </svg>
               </a>
           </li>
-          <li class="networks-list__item">
-            <a href="#" class="networks-list__link">
-              <svg class="networks-list__icon" >
+          <li class="social-networks-list__item">
+            <a href="#" class="social-networks-list__link networks-list__link--join">
+              <svg class="social-networks-list__icon" >
                 <use href="../images/icons/symbol-defs.svg#icon-linkedin-1"></use>
               </svg>
             </a>

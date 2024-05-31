@@ -22,15 +22,16 @@
    padding: 40px;
     background-color: #fff;
   z-index: 10;
-}
-.modal__title{
+
+&__title{
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 20px;
     letter-spacing: 0.03em;
     text-align: center;
-    color: var(--title) ;
+    color: getColor("title");
      margin-bottom: 12px;
+}
 }
 .modal__btn-close{
     position: absolute;
@@ -39,7 +40,7 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: var(--web-studio-white);
+    background-color: getColor("studio-white");
     cursor: pointer;
     border: 1px solid #00000010;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -50,16 +51,16 @@
     flex-direction: column;
    
     margin-bottom: 20px;
-}
 
-.modal-list__label{
+
+&__label{
     position: relative;
 letter-spacing: 0.01em;
 color: var(--text);
 padding-right: 7px;
 font-size: 12px;
 }
-.modal-list__input{
+&__input{
     border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 width: 100%;
@@ -73,16 +74,17 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill  color 250ms c
     border-color: var(--web-studio-blue);
     }
 }
-.modal__svg{
+
+&__svg{
     width: 15px;
     height: 15px;
     position: absolute;
     left: 12px;
     top: 31px;
 }
-
-.modal-list__input:hover + .modal__svg{
-    fill: var(--web-studio-blue);
+}
+.modal-list__input:hover + .modal-list__svg{
+    fill: getColor("studio-blue");
 }
 .modal__textarea{
     resize: none;
@@ -107,7 +109,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill  color 250ms c
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--text);
+    color: getColor("text");
     text-align: center;
     margin-bottom: 40px;
     }
@@ -115,12 +117,12 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill  color 250ms c
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--web-studio-blue);
-    border: 3px solid var(--web-studio-blue);
+    background-color: getColor("studio-blue");;
+    border: 3px solid getColor("studio-blue");;
 }
 
 .modal__link{
-    color: var(--web-studio-blue);
+    color: getColor("studio-blue");;
     text-decoration: underline;
 }
 .modal__btn-sub{
@@ -131,7 +133,7 @@ border: none;
     
     border-radius: 4px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background-color: var(--web-studio-blue);
+    background-color: getColor("studio-blue");
    
     font-weight: 700;
     font-size: 16px;
@@ -139,17 +141,16 @@ border: none;
     letter-spacing: 0.06em;
    cursor: pointer;
     margin: 0 auto;
-    color: var(--web-studio-white);
+    color: getColor("studio-white");
 }
-
-.modal__svg-close{
+.modal-list__svg-close{
     fill: var(--black);
     width: 11px;
     height: 11px;
     
 }
-.modal__btn-close:hover .div-modal-svg-close{
-    fill: var(--web-studio-blue);
+.modal__btn-close:hover .modal-list__svg-close{
+    fill: getColor("studio-blue");;
 }
 .is-hidden{
   

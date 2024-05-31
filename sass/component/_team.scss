@@ -1,14 +1,10 @@
 .team {
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: var(--team);
+    background-color: getColor("team");
     
-}
-.team__list {
-    display: flex;
-    gap: 30px;
-    
-}
+
+
 
 &__title {
    text-align: center;
@@ -17,20 +13,27 @@ font-weight: 700;
 letter-spacing: 1.08;
 margin-bottom: 50px;
 }
+}
+.team-list {
+    display: flex;
+    gap: 30px;
+    
+
 .team-list__item {
     padding-bottom: 30px;
     background-color: #FFF;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
-.team-list__title {
+&__title {
 text-align: center;
 font-size: 16px;
 font-weight: 500;
 letter-spacing: 0.48px;
 margin-bottom: 10px;
 }
+
 .team-list__description {
-    color:var(--text);
+    color:getColor("text");
 text-align: center;
 font-size: 16px;
 letter-spacing: 0.48px;
@@ -43,6 +46,7 @@ height: 261px;
  margin-bottom: 30px;
 
  
+}
 }
 .networks-list{
     display: flex;
@@ -61,10 +65,14 @@ height: 261px;
     transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
     &:hover{
-        background-color: var(--web-studio-blue);
-        border-radius: 50%;
+      background-color: getColor("studio-blue");
+      border-radius: 50%;
         animation: upteam 250ms;
     }
+}
+.networks-list__link--team{
+    background-color: transparent;
+    
 }
 @keyframes upteam{
     0%{
@@ -76,7 +84,7 @@ height: 261px;
 }
 
 .networks-list__link:hover .networks__svg{
-    fill: var(--web-studio-white);
+    fill: getColor("studio-white");
    
 }
 .networks__svg{
@@ -85,5 +93,5 @@ height: 261px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 20px;
     height: 20px;
-    fill: var(--svg);
+    fill: getColor("svg");
 }
