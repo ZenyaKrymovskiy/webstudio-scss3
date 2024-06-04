@@ -1,20 +1,4 @@
-:root {
-    --web-studio-black: #2F303A;
-    --web-studio-blue: #2196F3;
-    --web-studio-white: #fff;
---title:#212121;
---text: #757575;
---footer:rgba(255, 255, 255, 0.60) ;
---black:#000;
---team: #F5F4FA;
---svg:#AFB1B8;
---portfolio-black: #2F303A;
---portfolio-blue: #2196F3;
---portfolio-white: #fff;
---button-bg: #F5F4FA;
 
---border: #EEE;
-}
 $colors:(
     "studio-black": #2F303A,
     "studio-blue": #2196F3,
@@ -28,6 +12,7 @@ $colors:(
     "portfolio-blue": #2196F3,
     "portfolio-white": #fff,
     "button-bg": #F5F4FA,
+    "border": #EEE ,
 );
 
 
@@ -35,10 +20,10 @@ $colors:(
     @return map-get($colors, $key)
 };
 $fonts: (
-    // "font-roboto": # ('"Roboto" , sans-serif'),
-    "font-roboto": # ( "Roboto", sans-serif) ,
-    "font-raleway": # ( '"Raleway" , serif') ,
+    
+    "font-roboto": #{ "Roboto", "sans-serif"} ,
+    "font-raleway": #{ "Raleway" , "sans-serif"} ,
 );
-@function getColor($key) {
-    @return map-get($fonts, $key)
+@function getFont($key) {
+    @return map-get($fonts, $key);
 }

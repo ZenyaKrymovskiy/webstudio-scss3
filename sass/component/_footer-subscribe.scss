@@ -43,7 +43,7 @@
     color: getColor("studio-white");
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background-color: var(--web-studio-blue);
+    background-color: getColor("studio-white");
     
 }
 .footer-subscribe__svg{
@@ -51,7 +51,7 @@
     width: 21px;
     height: 21px;
    
-    fill: getColor("studio-white");
+    fill: getColor("studio-blue");
 }
 
    

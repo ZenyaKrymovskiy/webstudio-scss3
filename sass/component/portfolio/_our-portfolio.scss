@@ -6,8 +6,8 @@
     margin-bottom: 50px;
 }
 .button__filter {
-    background-color:var(--button-bg);
-    color:var(--title);
+    background-color: getColor("button-bg");
+    color:getColor("title");
 text-align: center;
 font-family: "Roboto";
 font-size: 16px;
@@ -28,9 +28,9 @@ animation-fill-mode: both;
 animation: jump 5.5s ease infinite alternate;
 
 &:hover {
- background-color:var(--portfolio-blue);
+ background-color: getColor("portfolio-blue");
  animation: juup 1s ease infinite;
- color: var(--button-bg);
+ color: getColor("button-bg");
  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 
 
@@ -58,9 +58,9 @@ animation: jump 5.5s ease infinite alternate;
     gap: 27px;
     justify-content: center;
     
-}
-.our-portfolio-list__title {
-    color:var(--title);
+
+&__title {
+    color:getColor("title");
 font-style: normal;
 font-size: 18px;
 font-weight: 700;
@@ -70,7 +70,7 @@ margin-top: 20px;
 margin-bottom: 4px;
 padding-left: 24px;
 }
-.our-portfolio-list__description {
+&__description {
     color:var(--text);
 font-size: 16px;
 font-weight: 400;
@@ -78,6 +78,7 @@ line-height: 1.9 ;
 
 padding-left: 24px;
 letter-spacing: 0.48px;
+}
 }
 .our-portfolio-list__item {
     

@@ -1,5 +1,5 @@
 .footer {
-    background-color:  #2F303A;
+    background-color:  getColor("studio-black");
     padding-top: 64px;
     padding-bottom: 67px;
     
@@ -33,7 +33,7 @@
 
 &__link {
     padding-top: 20px;
-    color: #FFF;
+    color: getColor("studio-white") ;
 line-height: 1.7; 
 letter-spacing: 0.42px;
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
