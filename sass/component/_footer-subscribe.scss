@@ -9,7 +9,7 @@
 }
 .footer-subscribe__form{
     display: flex;
-  
+    @extend %flex;
   align-items: flex-end;
 }
 .footer-subscribe__input{
@@ -17,7 +17,7 @@
     border-radius: 4px;
     width: 358px;
     height: 50px;
-  
+  @include texts(16px, 400, normal, 1.25);
     margin-right: 12px;
     padding: 13px 15px;
     font-weight: 400;
@@ -43,7 +43,7 @@
     color: getColor("studio-white");
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background-color: getColor("studio-white");
+    background-color: getColor("studio-blue");
     
 }
 .footer-subscribe__svg{
@@ -51,7 +51,7 @@
     width: 21px;
     height: 21px;
    
-    fill: getColor("studio-blue");
+    fill: getColor("studio-white");
 }
 
    

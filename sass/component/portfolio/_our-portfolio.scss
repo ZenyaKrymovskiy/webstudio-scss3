@@ -1,19 +1,16 @@
 .filters{
-    display: flex;
-    justify-content: center;
+    @extend %flex;
+    
     gap: 8px;
-    align-items: center;
+    
     margin-bottom: 50px;
 }
 .button__filter {
     background-color: getColor("button-bg");
     color:getColor("title");
+    @include texts(16px, 500, normal, 1.7 );
 text-align: center;
 font-family: "Roboto";
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 1.7;
 letter-spacing: 0.48px;
 padding: 6px 22px;
 border-radius: 4px;
@@ -48,9 +45,6 @@ animation: jump 5.5s ease infinite alternate;
 .our-portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
-    
-    
-    justify-content: center;
 }
 .our-portfolio-list {
     display: flex;
@@ -58,46 +52,41 @@ animation: jump 5.5s ease infinite alternate;
     gap: 27px;
     justify-content: center;
     
-
+    .our-portfolio-list__item {
+    
+        border: 1px solid #EEE;
+        flex-basis: calc((100% - 10px)/4);
+        padding-bottom: 20px;
+        border: 1px solid #EEE;
+    background: #FFF;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .our-portfolio-list__item:hover .our-portfolio-overlay{
+        transform:  translateY(0);
+        
+    }
 &__title {
+    @include texts(18px, 700, normal, 2 );
     color:getColor("title");
-font-style: normal;
-font-size: 18px;
-font-weight: 700;
-line-height: 2;
 letter-spacing: 1.08px;
 margin-top: 20px;
 margin-bottom: 4px;
 padding-left: 24px;
 }
 &__description {
-    color:var(--text);
-font-size: 16px;
-font-weight: 400;
-line-height: 1.9 ;
+    color:getColor("text");
+    @include texts(16px, 400, normal, 1.9 );
+
 
 padding-left: 24px;
 letter-spacing: 0.48px;
 }
 }
-.our-portfolio-list__item {
-    
-    border: 1px solid #EEE;
-    flex-basis: calc((100% - 10px)/4);
-    padding-bottom: 20px;
-    border: 1px solid #EEE;
-background: #FFF;
-transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.our-portfolio-list__item:hover .our-portfolio-overlay{
-    transform:  translateY(0);
-    
-}
 .our-portfolio-overlay p {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.56;
+    @include texts(18px, 400, normal, 1.56 );
+
     letter-spacing: 0.03em;
     color: #fff;
     padding: 60px 48px;

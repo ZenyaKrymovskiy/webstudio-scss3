@@ -9,16 +9,12 @@ margin-bottom: 23px;
 }
 
 .social-networks-list{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex;
     gap: 10px;
 }
 
 .social-networks-list__item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex;
     background-color: #ffffff10;
     border-radius: 50%;
     width: 44px;

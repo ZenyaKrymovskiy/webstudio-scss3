@@ -1,0 +1,14 @@
+@mixin btn($color, $bg,){
+    color: $color;
+    background-color: $bg;
+    
+}
+@mixin texts($f-size: 14px, $f-weight: 400 ,$f-style: normal , $l-height: 1.25 ) {
+     
+    font-size: $f-size;
+   
+    font-weight: $f-weight;
+    font-style: $f-style;
+    line-height: $l-height;
+    
+}

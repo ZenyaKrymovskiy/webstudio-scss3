@@ -1,6 +1,6 @@
 .work {
-    display: flex;
-    justify-content: center;
+    @extend %flex;
+  
     padding-bottom: 94px;
     
 
@@ -31,13 +31,11 @@
 .work-list__label{
     background-color: rgba(47, 48, 58, 0.8);;
     height: 49px;
-    color: #F5F4FA;
+    color: getColor("team");
     position: absolute;
     bottom: 0;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex;
     padding: 29px;
     text-transform: uppercase;
 

@@ -1,4 +1,7 @@
-@import "./base/variables";
+
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/placeholders";
 @import "./base/common";
 @import "./component/header";
 @import "./component/hero";
@@ -6,8 +9,6 @@
 @import "./component/work";
 @import "./component/team";
 @import "./component/clients";
-@import "./mixins";
-@import "./placeholders";
 @import "./component/footer-contacts";
 @import "./component/footer-join";
 @import "./component/footer-subscribe";
