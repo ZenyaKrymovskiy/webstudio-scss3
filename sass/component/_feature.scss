@@ -2,6 +2,11 @@
     padding-top: 94px;
     padding-bottom: 94px;
 }
+.features-list {
+ 
+    display: flex;
+    gap: 30px;
+}
 .features-list__item::before {
     content: "";
     display: inline-block;
@@ -25,13 +30,9 @@
 .features-list__item:nth-child(4)::before{
     background-image: url(../images/astronaut1.svg);
 }
-.features-list {
- 
- display: flex;
- gap: 30px;
- 
 
-&__title {
+
+.features-list__title {
     
     color: getColor("title");
     font-weight: 700;
@@ -42,11 +43,10 @@ margin-bottom: 10px;
 margin-top: 30px;
 
 }
-&__description {
+.features-list__description {
     
     color: getColor("text");;
 
     line-height: 2;
     letter-spacing: 0.42px;
-}
 }

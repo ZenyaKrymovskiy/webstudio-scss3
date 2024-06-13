@@ -20,7 +20,7 @@ margin-bottom: 50px;
     gap: 30px;
     
 
-.team-list__item {
+&__item {
     padding-bottom: 30px;
     background-color: #FFF;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -42,7 +42,7 @@ letter-spacing: 0.48px;
 margin-bottom: 10px;
 }
 
-.team-list__image {
+&__image {
     width: 270px;
 height: 261px;
  margin-bottom: 30px;
@@ -54,9 +54,9 @@ height: 261px;
     @extend %flex;
     gap: 10px;
     
-}
 
-.networks-list__link{
+
+&__link{
     @extend %flex;
     width: 44px;
     height: 44px;
@@ -67,10 +67,24 @@ height: 261px;
       border-radius: 50%;
         animation: upteam 250ms;
     }
+    &--team{
+        background-color: transparent;
+        
+    }
 }
-.networks-list__link--team{
-    background-color: transparent;
-    
+
+&__link:hover &__svg{
+    fill: getColor("studio-white");
+   
+}
+
+&__svg{
+    @extend %flex;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 20px;
+    height: 20px;
+    fill: getColor("svg");
+}
 }
 @keyframes upteam{
     0%{
@@ -81,14 +95,4 @@ height: 261px;
     }
 }
 
-.networks-list__link:hover .networks__svg{
-    fill: getColor("studio-white");
-   
-}
-.networks__svg{
-    @extend %flex;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    width: 20px;
-    height: 20px;
-    fill: getColor("svg");
-}
+

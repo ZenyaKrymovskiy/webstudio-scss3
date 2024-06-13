@@ -21,12 +21,9 @@
     color: getColor("studio-white");
     
 }
-.footer-join{
-    display: block;
-    margin-right: 92px;
-}
+
 .address {
-    @extend %flex;
+    
     display: flex;
     flex-direction: column;
     gap: 9px;

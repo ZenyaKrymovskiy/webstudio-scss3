@@ -18,31 +18,33 @@ padding-top: 89px;
     
     gap: 30px;
     
-}
-.clients-list__item{
+
+&__item{
     width: 170px;
-    border: 1px solid getColor("svg") ;
+    border: 1px solid getColor("svg");
     padding: 15px 30px;
     border-radius: 7px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
-}
-.clients-list__item:hover{
+
+&:hover{
     border-color:getColor("studio-blue");
 }
-.clients-list__item:hover .clients-list__svg{
-         transition:fill   250ms cubic-bezier(0.4, 0, 0.2, 1); ;
+&:hover &__svg{
+         transition:fill   250ms cubic-bezier(0.4, 0, 0.2, 1); 
       fill: getColor("studio-blue");
 }
-.clients-list__link{
+}
+&__link{
     fill: getColor("black");
     display: flex;
     
 }
 
-.clients-list__svg{
+&__svg{
     fill: getColor("svg");
     width: 106px;
     height: 60px;
 
+}
 }

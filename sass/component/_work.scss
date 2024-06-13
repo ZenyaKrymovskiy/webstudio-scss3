@@ -14,9 +14,9 @@
 .work-list {
     display: flex;
     gap: 30px;
-}
 
-.work-list__image {
+
+&__image {
     width: 370px;
     height: 294px;
     
@@ -25,10 +25,10 @@
     
    
 }
-.work-list__thumb{
+&__thumb{
     position: relative;
 }
-.work-list__label{
+&__label{
     background-color: rgba(47, 48, 58, 0.8);;
     height: 49px;
     color: getColor("team");
@@ -39,4 +39,5 @@
     padding: 29px;
     text-transform: uppercase;
 
+}
 }
