@@ -66,7 +66,7 @@ animation: jump 5.5s ease infinite alternate;
     }
     }
     
-    &:hover .our-portfolio-overlay{
+    .our-portfolio-list__item:hover .our-portfolio-overlay{
         transform:  translateY(0);
         
     }

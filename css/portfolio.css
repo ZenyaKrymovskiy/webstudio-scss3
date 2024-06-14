@@ -64,6 +64,7 @@ ul {
 }
 
 .logo {
+  font-family: Raleway, sans-serif;
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.78px;
@@ -199,7 +200,7 @@ ul {
 .our-portfolio-list .our-portfolio-list__item:hover {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
-.our-portfolio-list:hover .our-portfolio-overlay {
+.our-portfolio-list .our-portfolio-list__item:hover .our-portfolio-overlay {
   transform: translateY(0);
 }
 .our-portfolio-list__thumb {
@@ -285,7 +286,6 @@ ul {
   line-height: 1.7;
   letter-spacing: 0.42px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 211px;
 }
 .address:hover {
   color: rgba(255, 255, 255, 0.6);

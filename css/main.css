@@ -72,6 +72,7 @@ ul {
 }
 
 .logo {
+  font-family: Raleway, sans-serif;
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.78px;
@@ -374,7 +375,7 @@ ul {
 .clients-list__item:hover {
   border-color: #2196F3;
 }
-.clients-list__item:hover .clients-list__item__svg {
+.clients-list__item:hover .clients-list__svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #2196F3;
 }
@@ -417,7 +418,6 @@ ul {
   line-height: 1.7;
   letter-spacing: 0.42px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 211px;
 }
 .address:hover {
   color: rgba(255, 255, 255, 0.6);
@@ -570,6 +570,14 @@ ul {
   border: 1px solid rgba(0, 0, 0, 0.062745098);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal__svg-close {
+  fill: var(--black);
+  width: 11px;
+  height: 11px;
+}
+.modal__btn-close:hover .modal__svg-close {
+  fill: #2196F3;
+}
 .modal__check {
   width: 16px;
   height: 15px;
@@ -620,18 +628,10 @@ ul {
   flex-direction: column;
   margin-bottom: 20px;
 }
-.modal-list__svg-close {
-  fill: var(--black);
-  width: 11px;
-  height: 11px;
-}
-.modal-list__btn-close:hover .modal-list__svg-close {
-  fill: #2196F3;
-}
 .modal-list__label {
   position: relative;
   letter-spacing: 0.01em;
-  color: var(--text);
+  color: #757575;
   padding-right: 7px;
   font-size: 12px;
 }
