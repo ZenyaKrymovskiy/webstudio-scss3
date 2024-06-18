@@ -95,4 +95,20 @@ height: 261px;
     }
 }
 
-
+@media (max-width: 1220px) {
+   .team{
+    padding: 75px;
+    width: 476px;
+   } 
+   .team-list{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 70%;
+    width: 270px;
+    gap: 26px;
+   }
+   .team__title{
+   text-align: left;
+   margin-bottom: 27px;
+   }
+}

@@ -173,15 +173,25 @@ ul {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
+@media (max-width: 1220px) {
+  .hero {
+    width: 480px;
+    padding: 120px;
+  }
+  .hero__btn {
+    padding: 10px 32px;
+  }
+}
 .features {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.features .features-list {
+
+.features-list {
   display: flex;
   gap: 30px;
 }
-.features .features-list .features-list__item::before {
+.features-list .features-list__item::before {
   content: "";
   display: inline-block;
   width: 270px;
@@ -192,19 +202,19 @@ ul {
   border-radius: 4px;
   /* margin-bottom: 3opx; */
 }
-.features .features-list__item:nth-child(1)::before {
+.features-list__item:nth-child(1)::before {
   background-image: url(../images/antenna1.svg);
 }
-.features .features-list__item:nth-child(2)::before {
+.features-list__item:nth-child(2)::before {
   background-image: url(../images/clock1.svg);
 }
-.features .features-list__item:nth-child(3)::before {
+.features-list__item:nth-child(3)::before {
   background-image: url(../images/diagram1.svg);
 }
-.features .features-list__item:nth-child(4)::before {
+.features-list__item:nth-child(4)::before {
   background-image: url(../images/astronaut1.svg);
 }
-.features .features-list__title {
+.features-list__title {
   color: #212121;
   font-weight: 700;
   font-size: 14px;
@@ -213,12 +223,24 @@ ul {
   margin-bottom: 10px;
   margin-top: 30px;
 }
-.features .features-list__description {
+.features-list__description {
   color: #757575;
   line-height: 2;
   letter-spacing: 0.42px;
 }
 
+@media (max-width: 1220px) {
+  .features-list {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .features-list__item {
+    flex: 1 1 70%;
+  }
+  .features-list__description {
+    width: 270px;
+  }
+}
 .work {
   padding-bottom: 94px;
 }
@@ -333,6 +355,23 @@ ul {
   }
   100% {
     transform: translateY(-15px);
+  }
+}
+@media (max-width: 1220px) {
+  .team {
+    padding: 75px;
+    width: 476px;
+  }
+  .team-list {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 70%;
+    width: 270px;
+    gap: 26px;
+  }
+  .team__title {
+    text-align: left;
+    margin-bottom: 27px;
   }
 }
 .clients {

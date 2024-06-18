@@ -41,7 +41,7 @@ font-family: getFont("font-raleway");
 .navigation-list {
  display: flex;
  justify-content: flex-end;
- 
+  
  gap: 50px;
  &__link {
     color:  getColor("title");
@@ -92,12 +92,22 @@ font-family: getFont("font-raleway");
     display: flex;
     gap: 50px;
   width: 370px;  
+//   @media (max-width:320px) and (max-width:1024px) {
+//     .header-contacts-list{
+//         display: flex;
+//         flex-direction: column;
+//         gap: 10px;
+//     }
+    
+//   }
 }
 .header-contacts-list{
     display: flex;
   
     align-items: center;
     gap: 30px;
+ 
+    
 
 &__item{
     max-width: 200px;
