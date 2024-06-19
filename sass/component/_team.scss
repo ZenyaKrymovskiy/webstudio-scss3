@@ -95,10 +95,11 @@ height: 261px;
     }
 }
 
-@media (max-width: 1220px) {
+@media (min-width: 320px)  and (max-width:460px){
    .team{
     padding: 75px;
     width: 476px;
+  
    } 
    .team-list{
     display: flex;
@@ -110,5 +111,9 @@ height: 261px;
    .team__title{
    text-align: left;
    margin-bottom: 27px;
+   }
+   .networks-list__svg{
+    width: 24px;
+    height: 24px;
    }
 }

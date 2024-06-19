@@ -173,7 +173,7 @@ ul {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 1220px) {
+@media (min-width: 4800px) {
   .hero {
     width: 480px;
     padding: 120px;
@@ -229,7 +229,7 @@ ul {
   letter-spacing: 0.42px;
 }
 
-@media (max-width: 1220px) {
+@media (min-width: 320px) and (max-width: 460px) {
   .features-list {
     flex-wrap: wrap;
     gap: 30px;
@@ -357,7 +357,7 @@ ul {
     transform: translateY(-15px);
   }
 }
-@media (max-width: 1220px) {
+@media (min-width: 320px) and (max-width: 460px) {
   .team {
     padding: 75px;
     width: 476px;
@@ -372,6 +372,10 @@ ul {
   .team__title {
     text-align: left;
     margin-bottom: 27px;
+  }
+  .networks-list__svg {
+    width: 24px;
+    height: 24px;
   }
 }
 .clients {
@@ -575,6 +579,11 @@ ul {
   padding: 40px;
   background-color: #fff;
   z-index: 10;
+}
+@media (max-width: 480px) {
+  .modal .modal {
+    width: 450px;
+  }
 }
 .modal__title {
   font-weight: 700;
