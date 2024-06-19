@@ -173,7 +173,7 @@ ul {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-@media (min-width: 4800px) {
+@media (min-width: 320px) and (max-width: 420px) {
   .hero {
     width: 480px;
     padding: 120px;
@@ -239,6 +239,16 @@ ul {
   }
   .features-list__description {
     width: 270px;
+  }
+}
+@media (min-width: 767px) and (max-width: 834px) {
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .features-list__item {
+    flex-basis: 1 1 90px;
   }
 }
 .work {
@@ -360,7 +370,7 @@ ul {
 @media (min-width: 320px) and (max-width: 460px) {
   .team {
     padding: 75px;
-    width: 476px;
+    width: 450px;
   }
   .team-list {
     display: flex;
@@ -417,6 +427,26 @@ ul {
   height: 60px;
 }
 
+@media (min-width: 320px) and (max-width: 460px) {
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .clients-list__item {
+    width: 110px;
+    height: 94px;
+    flex: 1 1 30%;
+  }
+}
+@media (min-width: 768x) and (max-width: 838px) {
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .clients-list__item {
+    flex: 1 1 90%;
+  }
+}
 .footer {
   background-color: #2F303A;
   padding-top: 64px;

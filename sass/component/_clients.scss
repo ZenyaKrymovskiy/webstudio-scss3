@@ -49,3 +49,25 @@ padding-top: 89px;
 
 }
 }
+@media (min-width: 320px) and (max-width: 460px) {
+    .clients-list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .clients-list__item{
+        width: 110px;
+        height: 94px;
+        flex: 1 1 30%;
+    }
+}
+
+@media (min-width: 768x) and (max-width: 838px) {
+    .clients-list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .clients-list__item{
+        
+        flex: 1 1 90%;
+    }
+}

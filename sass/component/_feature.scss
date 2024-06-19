@@ -85,4 +85,16 @@ margin-top: 30px;
         width: 270px;
     }
   }
+  @media (min-width: 767px) and (max-width: 834px){
+    .features-list {
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 20px; 
+        
+      }
+    .features-list__item {
+        flex-basis:  1 1 90px;
+        
+      }
+  }
   
