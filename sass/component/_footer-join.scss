@@ -1,7 +1,8 @@
 .footer-join{
     display: block;
     margin-right: 92px;
-    &__title{
+}
+    .footer-join__title{
         font-family: getFont("font-roboto") ;
     font-weight: 700;
     font-size: 14px;
@@ -9,8 +10,8 @@
     text-transform: uppercase;
     color: getColor("studio-white");
     margin-bottom: 23px;
+   
     }
-}
 
 
 .social-networks-list{
@@ -42,6 +43,4 @@
 
 
 
-/* .footer-list-link:hover .footer-svg{
-    fill: var(--web-studio-white);
-} */
+    

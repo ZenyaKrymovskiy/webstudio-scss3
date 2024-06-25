@@ -7,9 +7,19 @@
 
 .footer .container{
     display: flex;
-    
+   
 }
-
+.footer-contacts {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  
+    @media (min-width: 1024px) {
+      margin: 0;
+      align-items: flex-start;
+    }
+}
 .footer-contacts__logo {
 
     
@@ -28,7 +38,9 @@
     flex-direction: column;
     gap: 9px;
     font-style: normal;
-
+    @media (min-width: 1024px) {
+        align-items: flex-start;
+      }
 &__link {
     padding-top: 20px;
     color: getColor("studio-white");
