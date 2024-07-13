@@ -1,9 +1,13 @@
 .work {
-    @extend %flex;
   
+  
+   display: none;
+@media(min-width:1200px){
+    display: block;
     padding-bottom: 94px;
     
-
+    
+}
 &__title {
     text-align: center;
     font-size: 36px;

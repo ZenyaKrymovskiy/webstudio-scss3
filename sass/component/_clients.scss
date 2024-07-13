@@ -124,7 +124,8 @@ padding-top: 89px;
 }
 @media (min-width: 320px)  {
     .clients-list{
-        display: flex;flex-wrap: wrap;
+        display: flex;
+        flex-wrap: wrap;
     }
     .clients-list__item{
         width: 110px;
@@ -140,7 +141,7 @@ padding-top: 89px;
     }
     .clients-list__item{
         
-        flex: 1 1 calc((100% - 30px)/3);
+        flex: 1 1 calc((100% - 60px)/3);
     }
 }
 @media (min-width: 1200px){

@@ -24,13 +24,22 @@
    padding: 40px;
     background-color: #fff;
   z-index: 10;
-@media (min-width:320) and (max-width: 480){
-    .modal{
-        width: 450px;
-        height: 150px;
-        transform: translate(64%, 62%);
-    }
+
+  @media (min-width:768px){
     
+    width: 450px;
+    height: 150px;
+    transform: translate(64%, 62%);
+
+
+}
+@media (min-width:1200px){
+    
+    width: 528px;
+    
+    transform: translate(64%, 62%);
+
+
 }
 &__title{
     font-family: getFont("$fonts");

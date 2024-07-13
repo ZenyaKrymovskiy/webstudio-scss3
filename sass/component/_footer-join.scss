@@ -1,6 +1,9 @@
 .footer-join{
     display: block;
     margin-right: 92px;
+    @media(min-width:768px){
+       
+        }
 }
     .footer-join__title{
         font-family: getFont("font-roboto") ;
@@ -10,7 +13,9 @@
     text-transform: uppercase;
     color: getColor("studio-white");
     margin-bottom: 23px;
-   
+    @media(min-width:1200px){
+    text-align: left;
+    }
     }
 
 

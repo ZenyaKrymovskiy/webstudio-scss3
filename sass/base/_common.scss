@@ -7,7 +7,9 @@ body {
     color: getColor("title");
 
 }
-
+li{
+    list-style-type: none;
+}
 img, button {
 display: block;
 }
