@@ -27,6 +27,7 @@ margin-bottom: 50px;
     
 
 &__item {
+box-sizing: border-box;
     flex: 1 1 100%;
     @media (min-width: 768px) {
       flex: 1 1 calc((100% - 30px) / 2);
@@ -34,7 +35,7 @@ margin-bottom: 50px;
     }
     @media (min-width: 1200px) {
       flex: 1 1 calc((100% - 90px) / 4);
-      padding: 32px;
+     
       padding-bottom: 30px;
     }
     padding-bottom: 30px;
@@ -61,7 +62,7 @@ margin-bottom: 10px;
 
 &__image {
     width: 100%;
-
+object-fit: cover;
  margin-bottom: 30px;
 
  

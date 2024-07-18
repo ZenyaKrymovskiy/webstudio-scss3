@@ -204,6 +204,9 @@ ul, h2, p, h3, h1, button, figure {
     height: 10px;
   }
 }
+.header-contacts-list__link:hover .header-contacts-list__svg {
+  fill: #2196F3;
+}
 
 .menu-container {
   width: 100%;
@@ -313,7 +316,6 @@ ul, h2, p, h3, h1, button, figure {
 }
 @media (min-width: 1200px) {
   .hero__title {
-    max-width: 696px;
     font-size: 44px;
   }
 }
@@ -495,6 +497,7 @@ ul, h2, p, h3, h1, button, figure {
   gap: 30px;
 }
 .team-list__item {
+  box-sizing: border-box;
   flex: 1 1 100%;
   padding-bottom: 30px;
   background-color: #FFF;
@@ -509,7 +512,6 @@ ul, h2, p, h3, h1, button, figure {
 @media (min-width: 1200px) {
   .team-list__item {
     flex: 1 1 calc((100% - 90px) / 4);
-    padding: 32px;
     padding-bottom: 30px;
   }
 }
@@ -533,6 +535,8 @@ ul, h2, p, h3, h1, button, figure {
 }
 .team-list__image {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-bottom: 30px;
 }
 
@@ -645,6 +649,7 @@ ul, h2, p, h3, h1, button, figure {
   flex-direction: column;
   text-align: center;
   align-items: center;
+  row-gap: 56px;
 }
 @media (min-width: 1200px) {
   .footer .container {
@@ -697,11 +702,21 @@ ul, h2, p, h3, h1, button, figure {
   line-height: 1.7;
   letter-spacing: 0.42px;
 }
+@media (min-width: 768px) {
+  .footer .container .footer-contacts, .footer .container .footer-join {
+    flex-direction: row;
+  }
+}
 
 .footer-join {
   display: block;
-  margin-right: 92px;
 }
+@media (min-width: 1200px) {
+  .footer-join {
+    margin-right: 92px;
+  }
+}
+
 .footer-join__title {
   font-family: Roboto, sans-serif;
   font-weight: 700;
@@ -749,12 +764,6 @@ ul, h2, p, h3, h1, button, figure {
     margin: 0;
   }
 }
-@media (min-width: 768px) {
-  .footer-subscribe {
-    margin-top: 88px;
-  }
-}
-
 .footer-subscribe__title {
   text-align: center;
   font-size: 14px;
@@ -856,17 +865,9 @@ ul, h2, p, h3, h1, button, figure {
   background-color: #fff;
   z-index: 10;
 }
-@media (min-width: 768px) {
-  .modal {
-    width: 450px;
-    height: 150px;
-    transform: translate(64%, 62%);
-  }
-}
 @media (min-width: 1200px) {
   .modal {
     width: 528px;
-    transform: translate(64%, 62%);
   }
 }
 .modal__title {
