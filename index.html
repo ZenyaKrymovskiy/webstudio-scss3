@@ -26,6 +26,11 @@
   </head>
   <body>
     <header class="header">
+      <!-- <button class="menu-open js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        
+      > -->
       <div class="container">
         <div class="header-spacer">
         <a href="./index.html" class="logo header-spacer__logo animate__animated animate__flash ">Web<span class=" header-spacer__logo  header-spacer__logo--studio  animate__animated animate__flash " >Studio</span></a>
@@ -68,15 +73,14 @@
 
       </div> 
     
-     <!-- <div class="menu-container">
+      <!-- <div class="menu-container js-menu-container" id="mobile-menu"> -->
    
-      <button class="menu-open  js-open-menu"
-      >
+      
         
-          <img src="./images/burgermenu.png"></img>
+     
         
-      </button>
-      <button class="menu-close js-close-menu">
+      
+      <!-- <button class="menu-close js-close-menu">
         <svg class="menu-close__svg">
           <use href="./images/icons/symbol-defs.svg#icon-close"></use>
         </svg>
@@ -127,7 +131,12 @@
       <a href="#" class="menu-networks__link">LinkedIn </a>
     </li>
   </ul>
-</div> -->
+  <button class="menu-close js-close-menu">
+    <svg class="menu-close__svg">
+      <use href="./images/icons/symbol-defs.svg#icon-close"></use>
+    </svg>
+  </button>
+</div>  -->
     </header>
      <main class="main"> 
        <section class="hero">
@@ -230,19 +239,29 @@
           <ul class="work-list">
             <li class="work-list__item">
               <figure class="work-list__thumb">
+                <picture>
+             <source srcset="./images/desc-images/work1@2x (1).jpg 2x " media="(min-width:1200px)">
+             
               <img src="./images/box1.jpg" alt="desktop" class="work-list__image" />
+            </picture>
               <figcaption class="work-list__label">Десктопні додатки</figcaption>
               </figure>
             </li>
             <li class="work-list__item">
               <figure class="work-list__thumb">
+                <picture>
+                <source srcset="./images/desc-images/work2@2x (1).jpg 2x " media="(min-width:1200px)">
               <img src="./images/box2.jpg" alt="mobile" class="work__image" />
+              </picture>
               <figcaption class="work-list__label">Мобільні додатки</figcaption>
             </figure>
             </li>
             <li class="work-list__item">
               <figure class="work-list__thumb">
+                <picture>
+                <source srcset="./images/desc-images/work3@2x (1).jpg 2x " media="(min-width:1200px)">
               <img src="./images/box3.jpg" alt="design" class="work-list__image" />
+              </picture>
               <figcaption class="work-list__label">Дизайнерські рішення</figcaption>
             </figure>
             </li>
@@ -254,37 +273,43 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__item">
-              <img
+              <picture>
+                <!-- <source srcset="./images/desc-images/descteam1@1x.jpg 1x, ./images/desc-images/descteam1@2x (1).jpg 2x" media="(min-width:1200px)" >
+                <source srcset="./images/mob-images/mobteam1 (1).jpg 1x, ./images/mob-images/m2ximages/mobteam1@2x (1).jpg" media="(min-width:320px)" >
+                <source srcset="./images/tab-images/tabletteam1 (1).jpg 1x, ./images/tab-images/tab2ximages/tabletteam1 (1).jpg 2x" media="(min-width:768px)" > -->
+                <img
                 src="./images/card4.jpg"
                 alt="Ігор Дем'яненко"
                 class="team-list__image"
               />
+              </picture>
+              
               <h3 class="team-list__title">Ігор Дем'яненко</h3>
               <p class="team-list__description">Product Designer</p>
               <ul class="networks-list">
                 <li class="networks-list__item">
-                  <a href="" class="networks-list__link networks-list__link--team" >
+                  <a href="#" class="networks-list__link networks-list__link--team" >
                     <svg class="networks-list__svg networks-list__link--svg">
                       <use href="./images/icons/symbol-defs.svg#icon-instagram2"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="networks-list__item">
-                  <a href="" class="networks-list__link networks-list__link--team">
+                  <a href="#" class="networks-list__link networks-list__link--team">
                     <svg class="networks-list__svg networks-list__link--svg">
                       <use href="./images/icons/symbol-defs.svg#icon-twitter1"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="networks-list__item">
-                  <a href="" class="networks-list__link networks-list__link--team">
+                  <a href="#" class="networks-list__link networks-list__link--team">
                     <svg class="  networks-list__svg networks-list__link--svg">
                       <use href="./images/icons/symbol-defs.svg#icon-facebook1"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="networks-list__item">
-                  <a href="" class="networks-list__link networks-list__link--team">
+                  <a href="#" class="networks-list__link networks-list__link--team">
                     <svg   class="networks-list__svg networks-list__link--svg">
                       <use href="./images/icons/symbol-defs.svg#icon-linkedin-1"></use>
                     </svg>
@@ -292,38 +317,45 @@
                 </li>
               </ul>
             </li>
+            <img src="" alt="">
             <li class="team-list__item">
-              <img
+              <picture>
+                <!-- <source srcset="./images/desc-images/descteam2@1x.jpg 1x, ./images/desc-images/descteam2@2x.jpg 2x" media="(min-width:1200px)" >
+                <source srcset="./images/mob-images/mobteam2.jpg 1x, ./images/mob-images/mobteam2@2x.jpg" media="(min-width:320px)" >
+                <source srcset="./images/tab-images/tabletteam2.jpg 1x, ./images/tab-images/tab2ximages/tabletteam2@2x (1).jpg 2x" media="(min-width:768px)" > -->
+                <img
                 src="./images/card2.jpg"
                 alt="Ольга Рєпіна"
                 class="team-list__image"
               />
+              </picture>
+             
               <h3 class="team-list__title">Ольга Рєпіна</h3>
               <p class="team-list__description">Frontend Developer</p>
               <ul class="networks-list">
                 <li class="networks-list__item">
-                  <a href="" class="networks-list__link networks-list__link--team">
+                  <a href="#" class="networks-list__link networks-list__link--team">
                     <svg class="networks-list__svg networks-list__link--svg">
                       <use href="./images/icons/symbol-defs.svg#icon-instagram2"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="networks-list__item">
-                  <a href="" class="networks-list__link networks-list__link--team">
+                  <a href="#" class="networks-list__link networks-list__link--team">
                     <svg class="networks-list__svg networks-list__link--svg">
                       <use href="./images/icons/symbol-defs.svg#icon-twitter1"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="networks-list__item">
-                  <a href="" class="networks-list__link networks-list__link--team">
+                  <a href="#" class="networks-list__link networks-list__link--team">
                     <svg class="networks-list__svg networks-list__link--svg">
                       <use href="./images/icons/symbol-defs.svg#icon-facebook1"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="networks-list__item">
-                  <a href="" class="networks-list__link networks-list__link--team">
+                  <a href="#" class="networks-list__link networks-list__link--team">
                     <svg   class="networks-list__svg networks-list__link--svg">
                       <use href="./images/icons/symbol-defs.svg#icon-linkedin-1"></use>
                     </svg>
@@ -332,37 +364,42 @@
               </ul>
             </li>
             <li class="team-list__item">
+              <picture>
+                <!-- <source srcset="./images/desc-images/descteam3@1x.jpg 1x, ./images/desc-images/descteam3@2x.jpg 2x" media="(min-width:1200px)" >
+                <source srcset="./images/mob-images/mobteam3.jpg 1x, ./images/mob-images/m2ximages/mobteam3@2x.jpg" media="(min-width:320px)" >
+                <source srcset="./images/tab-images/tabletteam3.jpg 1x, ./images/tab-images/tab2ximages/tabletteam3@2x.jpg 2x" media="(min-width:768px)" > -->
               <img
                 src="./images/card3.jpg"
                 alt="Микола Тарасов"
                 class="team-list__image"
               />
+              </picture>
               <h3 class="team-list__title">Микола Тарасов</h3>
               <p class="team-list__description">Marketing</p>
               <ul class="networks-list">
                 <li class="networks-list__item">
-                  <a href="" class="networks-list__link   networks-list__link--team">
+                  <a href="#" class="networks-list__link   networks-list__link--team">
                     <svg class="networks-list__svg networks-list__link--svg">
                       <use href="./images/icons/symbol-defs.svg#icon-instagram2"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="networks-list__item">
-                  <a href="" class="networks-list__link networks-list__link--team">
+                  <a href="#" class="networks-list__link networks-list__link--team">
                     <svg class="networks-list__svg networks-list__link--svg">
                       <use href="./images/icons/symbol-defs.svg#icon-twitter1"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="networks-list__item">
-                  <a href="" class="networks-list__link networks-list__link--team">
+                  <a href="#" class="networks-list__link networks-list__link--team">
                     <svg class="networks-list__svg networks-list__link--svg">
                       <use href="./images/icons/symbol-defs.svg#icon-facebook1"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="networks-list__item">
-                  <a href="" class="networks-list__link networks-list__link--team">
+                  <a href="#" class="networks-list__link networks-list__link--team">
                     <svg   class="networks-list__svg networks-list__link--svg">
                       <use href="./images/icons/symbol-defs.svg#icon-linkedin-1"></use>
                     </svg>
@@ -372,37 +409,42 @@
             </ul>
             </li>
             <li class="team-list__item">
+              <picture>
+                <!-- <source srcset="./images/desc-images/descteam4@1x.jpg 1x, ./images/desc-images/descteam4@2x.jpg 2x" media="(min-width:1200px)" > -->
+                <!-- <source srcset="./images/mob-images/mobteam4.jpg 1x, ./images/mob-images/m2ximages/mobteam4@2x.jpg" media="(min-width:320px)" >
+                <source srcset="./images/tab2ximages/tabletteam4.jpg 1x, ./images/tab-images/tab2ximages/tabletteam4@2x.jpg 2x" media="(min-width:768px)" > -->
               <img
-                src="./images/card1.jpg"
+                src="./images/card4.jpg"
                 alt="Михайло Єрмаков"
                 class="team-list__image"
               />
+              </picture>
               <h3 class="team-list__title">Михайло Єрмаков</h3>
               <p class="team-list__description">UI Designer</p>
               <ul class="networks-list">
                 <li class="networks-list__item">
-                  <a href="" class="networks-list__link networks-list__link--team">
+                  <a href="#" class="networks-list__link networks-list__link--team">
                     <svg class="networks-list__svg networks-list__link--svg">
                       <use href="./images/icons/symbol-defs.svg#icon-instagram2"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="networks-list__item">
-                  <a href="" class="networks-list__link networks-list__link--team">
+                  <a href="#" class="networks-list__link networks-list__link--team">
                     <svg class="networks-list__svg networks-list__link--svg">
                       <use href="./images/icons/symbol-defs.svg#icon-twitter1"></use>
                  </svg>
                   </a>
                 </li>
                 <li class="networks-list__item">
-                  <a href="" class="networks-list__link networks-list__link--team">
+                  <a href="#" class="networks-list__link networks-list__link--team">
                     <svg class="networks-list__svg networks-list__link--svg">
                       <use href="./images/icons/symbol-defs.svg#icon-facebook1"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="networks-list__item">
-                  <a href="" class="networks-list__link networks-list__link--team">
+                  <a href="#" class="networks-list__link networks-list__link--team">
                     <svg   class="networks-list__svg networks-list__link--svg">
                       <use href="./images/icons/symbol-defs.svg#icon-linkedin-1"></use>
                     </svg>
@@ -534,6 +576,12 @@
 
  <script src="./js/modal.js"></script>
  <script defer src="js/mobile-menu.js"></script>
+ <script
+ defer
+ src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+ integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+ crossorigin="anonymous"
+></script>
  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
  <script>
   AOS.init();

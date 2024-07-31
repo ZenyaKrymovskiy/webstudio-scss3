@@ -13,15 +13,14 @@
     text-transform: uppercase;
     color: getColor("studio-white");
     margin-bottom: 23px;
-    @media(min-width:1200px){
-    text-align: left;
-    }
+   
     }
 
 
 .social-networks-list{
     @extend %flex;
     gap: 10px;
+    justify-content: center;
     &__item{
         @extend %flex;
         background-color: #ffffff10;

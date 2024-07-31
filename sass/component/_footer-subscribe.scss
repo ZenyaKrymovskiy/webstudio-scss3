@@ -9,7 +9,7 @@
         margin: 0;
     }
     @media(min-width:768px){
-       
+       flex-wrap: wrap;
     }
     
 }
@@ -64,9 +64,8 @@
     @media(max-width:1200px){
         margin-bottom: 20px;
     }
-    @media(min-width:1200px){
-        width: 358px;
-        margin-right: 12px;
+    @media(min-width:768px){
+        width: 410px;
     }
 
 }

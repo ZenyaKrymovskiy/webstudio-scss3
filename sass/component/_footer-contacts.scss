@@ -8,17 +8,19 @@
 .footer .container{
     justify-content: space-around;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     text-align: center;
     align-items: center;
     row-gap: 56px;
+    
    @media(min-width:1200px){
     flex-direction: row;
     text-align: left;
     align-items: flex-start;
     justify-content: space-between;
+   }
    
-}
 
     
 .footer-contacts__logo {

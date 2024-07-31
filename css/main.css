@@ -209,13 +209,22 @@ ul, h2, p, h3, h1, button, figure {
 }
 
 .menu-container {
-  width: 100%;
-  height: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  padding: 50px 45px;
-  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  z-index: 133;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
 }
 
 .menu-close {
@@ -225,9 +234,29 @@ ul, h2, p, h3, h1, button, figure {
 }
 
 .menu-open {
-  width: 24px;
-  height: 16px;
+  display: block;
+  min-width: 24px;
+  min-height: 16px;
   order: 1;
+}
+@media (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
+}
+
+.is-open {
+  display: block !important;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-open {
+  position: absolute;
+  top: 10px;
+  right: 15px;
 }
 
 .menu-close__svg {
@@ -494,19 +523,19 @@ ul, h2, p, h3, h1, button, figure {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 22px;
 }
 .team-list__item {
   box-sizing: border-box;
   flex: 1 1 100%;
+  flex-grow: 1;
   padding-bottom: 30px;
   background-color: #FFF;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 @media (min-width: 768px) {
   .team-list__item {
-    flex: 1 1 calc((100% - 30px) / 2);
-    padding: 24px;
+    flex: 1 1 calc((100% - 30px) / 3);
   }
 }
 @media (min-width: 1200px) {
@@ -646,6 +675,7 @@ ul, h2, p, h3, h1, button, figure {
 .footer .container {
   justify-content: space-around;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   text-align: center;
   align-items: center;
@@ -726,14 +756,10 @@ ul, h2, p, h3, h1, button, figure {
   color: #fff;
   margin-bottom: 23px;
 }
-@media (min-width: 1200px) {
-  .footer-join__title {
-    text-align: left;
-  }
-}
 
 .social-networks-list {
   gap: 10px;
+  justify-content: center;
 }
 .social-networks-list__item {
   background-color: rgba(255, 255, 255, 0.062745098);
@@ -764,6 +790,12 @@ ul, h2, p, h3, h1, button, figure {
     margin: 0;
   }
 }
+@media (min-width: 768px) {
+  .footer-subscribe {
+    flex-wrap: wrap;
+  }
+}
+
 .footer-subscribe__title {
   text-align: center;
   font-size: 14px;
@@ -809,10 +841,9 @@ ul, h2, p, h3, h1, button, figure {
     margin-bottom: 20px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .footer-subscribe__input {
-    width: 358px;
-    margin-right: 12px;
+    width: 410px;
   }
 }
 
@@ -864,6 +895,12 @@ ul, h2, p, h3, h1, button, figure {
   padding: 40px;
   background-color: #fff;
   z-index: 10;
+}
+@media (min-width: 768px) {
+  .modal {
+    width: 450px;
+    height: 150px;
+  }
 }
 @media (min-width: 1200px) {
   .modal {
