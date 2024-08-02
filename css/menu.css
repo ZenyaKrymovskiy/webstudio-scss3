@@ -10,6 +10,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  background-color: #fff;
 }
 @media (min-width: 768px) {
   .menu-container {
@@ -28,11 +29,6 @@
   min-width: 24px;
   min-height: 16px;
   order: 1;
-}
-@media (min-width: 768px) {
-  .menu-open {
-    display: none;
-  }
 }
 
 .is-open {

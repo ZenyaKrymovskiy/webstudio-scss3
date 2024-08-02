@@ -22,7 +22,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: getColor("studio-white");
-    margin-bottom: 20px;
+    margin-bottom: 21px;
 }
 // .footer-subscribe__form{
     
@@ -65,8 +65,12 @@
         margin-bottom: 20px;
     }
     @media(min-width:768px){
-        width: 410px;
+        width: 100%;
     }
+    @media(min-width:320px){
+        width: 100%;
+    }
+    
 
 }
 .footer-subscribe__btn{

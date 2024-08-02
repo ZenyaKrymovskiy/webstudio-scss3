@@ -6,20 +6,18 @@
 }
 
 .footer .container{
-    justify-content: space-around;
+    
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    row-gap: 56px;
+    align-items: baseline;
+    gap: 60px;
     
    @media(min-width:1200px){
-    flex-direction: row;
-    text-align: left;
-    align-items: flex-start;
+    gap: 0;
     justify-content: space-between;
    }
+   
    
 
     

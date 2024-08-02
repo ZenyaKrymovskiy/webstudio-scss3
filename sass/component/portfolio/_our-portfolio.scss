@@ -27,7 +27,7 @@ animation-timing-function: ease;
 animation-iteration-count: infinite;
 animation-fill-mode: both;
 animation: jump 5.5s ease infinite alternate;
-
+                 border: none;
 &:hover {
  background-color: getColor("portfolio-blue");
  animation: juup 1s ease infinite;
@@ -96,14 +96,13 @@ animation: jump 5.5s ease infinite alternate;
     &__thumb{
         position: relative;
         width: 100%;
-        height: 294px;
+      
         overflow: hidden;
         
     }
     
 &__img {
-    object-fit: cover;
-    object-position: center;
+    
     width: 100%;
     height: 100%;
         

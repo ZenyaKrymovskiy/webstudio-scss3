@@ -165,24 +165,14 @@ ul, h2, p, h3, h1, button, figure {
   .header-contacts-list {
     flex-direction: row;
     align-items: center;
-    gap: 27px;
+    gap: 30px;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
   .header-contacts-list__link {
     font-weight: 500;
     display: flex;
-    gap: 10px;
-    align-items: center;
-    color: #757575;
-    font-size: 14px;
-  }
-}
-@media (min-width: 1200px) {
-  .header-contacts-list__link {
-    font-weight: 500;
-    display: flex;
-    gap: 10px;
+    gap: 8px;
     align-items: center;
     color: #757575;
     font-size: 14px;
@@ -191,17 +181,17 @@ ul, h2, p, h3, h1, button, figure {
 .header-contacts-list__link:hover {
   color: #2196F3;
 }
-@media (min-width: 1200px) {
-  .header-contacts-list__svg {
-    fill: #757575;
-    width: 16px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
 @media (min-width: 768px) {
   .header-contacts-list__svg {
     width: 14px;
     height: 10px;
+    fill: #757575;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+@media (min-width: 1200px) {
+  .header-contacts-list__svg {
+    width: 16px;
   }
 }
 .header-contacts-list__link:hover .header-contacts-list__svg {
@@ -220,6 +210,7 @@ ul, h2, p, h3, h1, button, figure {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  background-color: #fff;
 }
 @media (min-width: 768px) {
   .menu-container {
@@ -238,11 +229,6 @@ ul, h2, p, h3, h1, button, figure {
   min-width: 24px;
   min-height: 16px;
   order: 1;
-}
-@media (min-width: 768px) {
-  .menu-open {
-    display: none;
-  }
 }
 
 .is-open {
@@ -333,7 +319,7 @@ ul, h2, p, h3, h1, button, figure {
   }
 }
 .hero__title {
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
   font-style: normal;
   line-height: 1.36;
@@ -364,32 +350,6 @@ ul, h2, p, h3, h1, button, figure {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-@media (min-width: 320px) {
-  .hero {
-    width: 100%;
-    padding: 120px;
-  }
-  .hero__btn {
-    padding: 10px 32px;
-  }
-  .hero__title {
-    width: 100%;
-  }
-}
-@media (min-width: 1200px) {
-  .hero {
-    width: 100%;
-    padding: 200px;
-  }
-  .hero__btn {
-    padding: 10px;
-  }
-}
-@media (min-width: 768px) {
-  .hero__btn {
-    padding: 10px;
-  }
-}
 .features {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -498,6 +458,7 @@ ul, h2, p, h3, h1, button, figure {
 }
 
 .team {
+  padding-top: 60px;
   padding-bottom: 60px;
   background-color: #F5F4FA;
 }
@@ -633,9 +594,6 @@ ul, h2, p, h3, h1, button, figure {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #2196F3;
 }
-.clients-list__link {
-  display: flex;
-}
 .clients-list__svg {
   fill: #AFB1B8;
   width: 106px;
@@ -673,19 +631,15 @@ ul, h2, p, h3, h1, button, figure {
 }
 
 .footer .container {
-  justify-content: space-around;
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  row-gap: 56px;
+  align-items: baseline;
+  gap: 60px;
 }
 @media (min-width: 1200px) {
   .footer .container {
-    flex-direction: row;
-    text-align: left;
-    align-items: flex-start;
+    gap: 0;
     justify-content: space-between;
   }
 }
@@ -802,7 +756,7 @@ ul, h2, p, h3, h1, button, figure {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .footer-subscribe__form {
@@ -843,7 +797,12 @@ ul, h2, p, h3, h1, button, figure {
 }
 @media (min-width: 768px) {
   .footer-subscribe__input {
-    width: 410px;
+    width: 100%;
+  }
+}
+@media (min-width: 320px) {
+  .footer-subscribe__input {
+    width: 100%;
   }
 }
 
@@ -896,10 +855,14 @@ ul, h2, p, h3, h1, button, figure {
   background-color: #fff;
   z-index: 10;
 }
+@media (min-width: 320px) {
+  .modal {
+    width: 450px;
+  }
+}
 @media (min-width: 768px) {
   .modal {
     width: 450px;
-    height: 150px;
   }
 }
 @media (min-width: 1200px) {
