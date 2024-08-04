@@ -93,7 +93,7 @@ color: #2196f3;
 }
 .menu-networks {
     display: flex;
-    gap: 10x;
+    gap: 10px;
 
 &__item {
     gap: 10px;
@@ -111,5 +111,9 @@ color: #2196f3;
 }
 &__link {
     color: getColor("studio-blue");
+    
+}
+.menu-networks__link:hover{
+    color: #2196f3;
 }
 }
