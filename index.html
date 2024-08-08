@@ -26,11 +26,7 @@
   </head>
   <body>
     <header class="header">
-      <!-- <button class="menu-open js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        
-      > -->
+      
       <div class="container">
         <div class="header-spacer">
         <a href="./index.html" class="logo header-spacer__logo animate__animated animate__flash ">Web<span class=" header-spacer__logo  header-spacer__logo--studio  animate__animated animate__flash " >Studio</span></a>
@@ -68,75 +64,21 @@
           </a>
         </li>
         </ul>
+        <button class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        
+        <img src="./images/burgermenu.png" alt="">
           
+      </button>
        
 
       </div> 
     
-      <div class="menu-container js-menu-container" id="mobile-menu">
-   
       
-        
      
-        
       
-      <button class="menu-close js-close-menu">
-        <svg class="menu-close__svg">
-          <use href="./images/icons/symbol-defs.svg#icon-close"></use>
-        </svg>
-      </button>
-      
-    <ul class="nav-menu">
-      <li class="nav-menu__item">
-        <a href="./index.html" class="nav-menu__link">Студія</a>
-      </li>
-      <li class="nav-menu__item">
-        <a href="" class="nav-menu__link"
-          >Портфоліо</a
-        >
-      </li>
-      <li class="nav-menu__item">
-        <a href="#" class="nav-menu__link">Контакти</a>
-      </li>
-    </ul>
-    <ul class="menu-contacts">
-      <li class="menu-contacts__item">
-        <a
-        href="tel:+380961111111"
-        class=" menu-contacts__link  menu-contacts__link--bigtell"
-        >+38 096 111 11 11</a
-      >
-        
-      </li>
-      <li class="menu-contacts__item">
-        <a
-        href="mailto:info@devstudio.com"
-        class=" menu-contacts__link"
-        >info@devstudio.com</a>
-      
-      </li>
-    </ul>
-  <ul class="menu-networks">
-    <li class="menu-networks__item">
-
-      <a href="#" class="menu-networks__link">Instagram </a>
-    </li>
-    <li class="menu-networks__item">
-      <a href="#" class="menu-networks__link">Twitter </a>
-    </li>
-    <li class="menu-networks__item">
-      <a href="#" class="menu-networks__link">Facebook </a>
-    </li>
-    <li class="menu-networks__item">
-      <a href="#" class="menu-networks__link">LinkedIn </a>
-    </li>
-  </ul>
-  <button class="menu-close js-close-menu">
-    <svg class="menu-close__svg">
-      <use href="./images/icons/symbol-defs.svg#icon-close"></use>
-    </svg>
-  </button>
-</div> 
     </header>
      <main class="main"> 
        <section class="hero">
@@ -201,6 +143,7 @@
           </div>
         </div>
       </section> 
+
        <section class="features animate__animated animate__zoomIn">
         <div class="container">
           <ul class="features-list">
@@ -240,7 +183,7 @@
             <li class="work-list__item">
               <figure class="work-list__thumb">
                 <picture>
-             <source srcset="./images/desc-images/work1@2x (1).jpg 2x " media="(min-width:1200px)">
+             <source srcset="./images/desc-images/work1@2x.jpg 2x " media="(min-width:1200px)">
              
               <img src="./images/box1.jpg" alt="desktop" class="work-list__image" />
             </picture>
@@ -250,7 +193,7 @@
             <li class="work-list__item">
               <figure class="work-list__thumb">
                 <picture>
-                <source srcset="./images/desc-images/work2@2x (1).jpg 2x " media="(min-width:1200px)">
+                <source srcset="./images/desc-images/work2@2x.jpg 2x " media="(min-width:1200px)">
               <img src="./images/box2.jpg" alt="mobile" class="work__image" />
               </picture>
               <figcaption class="work-list__label">Мобільні додатки</figcaption>
@@ -259,7 +202,7 @@
             <li class="work-list__item">
               <figure class="work-list__thumb">
                 <picture>
-                <source srcset="./images/desc-images/work3@2x (1).jpg 2x " media="(min-width:1200px)">
+                <source srcset="./images/desc-images/work3@2x.jpg 2x " media="(min-width:1200px)">
               <img src="./images/box3.jpg" alt="design" class="work-list__image" />
               </picture>
               <figcaption class="work-list__label">Дизайнерські рішення</figcaption>
@@ -274,11 +217,11 @@
           <ul class="team-list">
             <li class="team-list__item">
               <picture>
-                <!-- <source srcset="./images/desc-images/descteam1@1x.jpg 1x, ./images/desc-images/descteam1@2x (1).jpg 2x" media="(min-width:1200px)" >
-                <source srcset="./images/mob-images/mobteam1 (1).jpg 1x, ./images/mob-images/m2ximages/mobteam1@2x (1).jpg" media="(min-width:320px)" >
-                <source srcset="./images/tab-images/tabletteam1 (1).jpg 1x, ./images/tab-images/tab2ximages/tabletteam1 (1).jpg 2x" media="(min-width:768px)" > -->
+                <!-- <source srcset="./images/desc-images/descteam1@1x.jpg 1x, ./images/desc-images/descteam1@2x.jpg 2x" media="(min-width:1200px)" >
+                <source srcset="./images/mob-images/mobteam1.jpg 1x, ./images/mob-images/m2ximages/mobteam1@2x.jpg" media="(min-width:320px)" >
+                <source srcset="./images/tab-images/tabletteam1.jpg 1x, ./images/tab-images/tab2ximages/tabletteam1.jpg 2x" media="(min-width:768px)" > -->
                 <img
-                src="./images/card4.jpg"
+                src="./images/mob-images/mobteam1.jpg"
                 alt="Ігор Дем'яненко"
                 class="team-list__image"
               />
@@ -317,14 +260,13 @@
                 </li>
               </ul>
             </li>
-            <img src="" alt="">
             <li class="team-list__item">
               <picture>
                 <!-- <source srcset="./images/desc-images/descteam2@1x.jpg 1x, ./images/desc-images/descteam2@2x.jpg 2x" media="(min-width:1200px)" >
                 <source srcset="./images/mob-images/mobteam2.jpg 1x, ./images/mob-images/mobteam2@2x.jpg" media="(min-width:320px)" >
                 <source srcset="./images/tab-images/tabletteam2.jpg 1x, ./images/tab-images/tab2ximages/tabletteam2@2x (1).jpg 2x" media="(min-width:768px)" > -->
                 <img
-                src="./images/card2.jpg"
+                src="./images/mob-images/mobteam2.jpg"
                 alt="Ольга Рєпіна"
                 class="team-list__image"
               />
@@ -369,7 +311,7 @@
                 <source srcset="./images/mob-images/mobteam3.jpg 1x, ./images/mob-images/m2ximages/mobteam3@2x.jpg" media="(min-width:320px)" >
                 <source srcset="./images/tab-images/tabletteam3.jpg 1x, ./images/tab-images/tab2ximages/tabletteam3@2x.jpg 2x" media="(min-width:768px)" > -->
               <img
-                src="./images/card3.jpg"
+                src="./images/tab-images/tabletteam3.jpg"
                 alt="Микола Тарасов"
                 class="team-list__image"
               />
@@ -414,7 +356,7 @@
                 <!-- <source srcset="./images/mob-images/mobteam4.jpg 1x, ./images/mob-images/m2ximages/mobteam4@2x.jpg" media="(min-width:320px)" >
                 <source srcset="./images/tab2ximages/tabletteam4.jpg 1x, ./images/tab-images/tab2ximages/tabletteam4@2x.jpg 2x" media="(min-width:768px)" > -->
               <img
-                src="./images/card4.jpg"
+                src="./images/tab-images/tab2ximages/tabletteam4@2x.jpg"
                 alt="Михайло Єрмаков"
                 class="team-list__image"
               />
@@ -572,11 +514,68 @@
       </div>
     </footer> 
        
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-toggle js-close-menu">
+    <svg class="menu-close__svg">
+      <use href="./images/icons/symbol-defs.svg#icon-close"></use>
+    </svg>
+  </button>
+    <ul class="nav-menu">
+      <li class="nav-menu__item">
+        <a href="./index.html" class="nav-menu__link">Студія</a>
+      </li>
+      <li class="nav-menu__item">
+        <a href="./pages/portfolio.html" class="nav-menu__link"
+          >Портфоліо</a
+        >
+      </li>
+      <li class="nav-menu__item">
+        <a href="#" class="nav-menu__link">Контакти</a>
+      </li>
+    </ul>
+    <ul class="menu-contacts">
+      <li class="menu-contacts__item">
+        <a
+        href="tel:+380961111111"
+        class=" menu-contacts__link  menu-contacts__link--bigtell"
+        >+38 096 111 11 11</a
+      >
+        
+      </li>
+      <li class="menu-contacts__item">
+        <a
+        href="mailto:info@devstudio.com"
+        class=" menu-contacts__link"
+        >info@devstudio.com</a>
+      
+      </li>
+    </ul>
+  <ul class="menu-networks">
+    <li class="menu-networks__item">
 
+      <a href="#" class="menu-networks__link">Instagram </a>
+    </li>
+    <li class="menu-networks__item">
+      <a href="#" class="menu-networks__link">Twitter </a>
+    </li>
+    <li class="menu-networks__item">
+      <a href="#" class="menu-networks__link">Facebook </a>
+    </li>
+    <li class="menu-networks__item">
+      <a href="#" class="menu-networks__link">LinkedIn </a>
+    </li>
+  </ul>
+  
+</div>
 
  <script src="./js/modal.js"></script>
- <script defer src="js/mobile-menu.js"></script>
- 
+ <script defer src="./js/mobile-menu.js"></script>
+ <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
  <script>
   AOS.init();

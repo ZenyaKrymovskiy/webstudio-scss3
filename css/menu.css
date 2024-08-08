@@ -10,25 +10,28 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: #fff;
+  background-color: getColor("studio-white");
+  transform: translateX(100%);
+  transition: transform 250ms;
+}
+
+.menu-toggle {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
 }
 @media (min-width: 768px) {
-  .menu-container {
+  .menu-toggle {
     display: none;
   }
 }
 
-.menu-close {
+.menu-container .menu-toggle {
   position: absolute;
   top: 10px;
   right: 15px;
-}
-
-.menu-open {
-  display: block;
-  min-width: 24px;
-  min-height: 16px;
-  order: 1;
 }
 
 .is-open {
@@ -39,15 +42,12 @@
   transform: translateX(0);
 }
 
-.menu-container .menu-open {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-}
-
 .menu-close__svg {
-  width: 30px;
-  height: 30px;
+  width: 18px;
+  height: 18px;
+}
+.menu-close__svg:hover {
+  color: getColor("studio-blue");
 }
 
 .nav-menu {
@@ -58,40 +58,48 @@
   margin-bottom: 100px;
 }
 .nav-menu__link {
-  color: black;
+  color: getColor("studio-black");
   font-weight: 500;
   font-size: 40px;
   letter-spacing: 0.02em;
 }
-.nav-menu__link:hover {
-  color: GetColor("studio-blue");
+.nav-menu .nav-menu__link:hover {
+  color: getColor("studio-blue");
 }
 
-.menu-contacts__item {
-  gap: 27px;
+.menu-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 64px;
 }
 
 .menu-contacts__link {
-  font-family: var(--font-family);
   font-weight: 500;
   font-size: 24px;
   letter-spacing: 0.02em;
   color: #757575;
 }
-
+.menu-contacts__link .menu-container .menu-contacts {
+  gap: 44px;
+}
 .menu-contacts__link--bigtell {
   font-weight: 500;
   font-size: 34px;
   letter-spacing: 0.02em;
-  color: #2196f3;
+  color: getColor("studio-blue");
 }
 
 .menu-networks {
   display: flex;
-  gap: 10x;
+  gap: 10px;
 }
 .menu-networks__item {
   gap: 10px;
+}
+.menu-networks__item:nth-child(1) {
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 .menu-networks__item:nth-child(2) {
   border-left: 1px solid rgba(33, 33, 33, 0.2);
@@ -101,6 +109,13 @@
   border-left: 1px solid rgba(33, 33, 33, 0.2);
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
+.menu-networks__item:nth-child(4) {
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
 .menu-networks__link {
+  color: getColor("studio-blue");
+}
+.menu-networks .menu-networks__link:hover {
   color: getColor("studio-blue");
 }/*# sourceMappingURL=menu.css.map */
