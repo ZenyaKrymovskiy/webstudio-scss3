@@ -321,6 +321,7 @@ ul, h2, p, h3, h1, button, figure {
 }
 
 .hero {
+  background-size: cover;
   background-color: #2F303A;
   padding: 118px 0;
   flex-wrap: wrap;
