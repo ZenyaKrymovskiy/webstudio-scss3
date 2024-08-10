@@ -8,7 +8,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("./images/desc-images/deschero1x.jpg");
+    url("../images/desc-images/deschero1x.jpg");
     @media (min-width:320px){
       background-image: linear-gradient(
         to right,
@@ -31,7 +31,7 @@
         rgba(47, 48, 58, 0.4)
       ), url("../images/tab-images/tabhero1x.jpg");
       @media(min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution:2dppx){
-        background-image:  url("./images/tab-images/tab2ximages/tablhero2x.jpg");
+        background-image:  url("../images/tab-images/tab2ximages/tablhero2x.jpg");
         }
       }
 @media (min-width:1200px){
@@ -40,7 +40,7 @@
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
-    ), url(/images/desc-images/deschero2x.jpg);
+    ), url("../images/desc-images/deschero2x.jpg");
     }
  background-size: cover;
 }
