@@ -39,6 +39,23 @@ img, button {
   }
 }
 
+button {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul, h2, p, h3, h1, button, figure {
+  padding: 0;
+  margin: 0;
+}
+
 .header {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -646,14 +663,14 @@ img, button {
 }
 @media (min-width: 1200px) {
   .footer-subscribe__btn {
+    display: flex;
+    align-items: center;
     width: 200px;
-    margin-right: 8px;
   }
 }
 
 .footer-subscribe__svg {
-  width: 21px;
-  height: 21px;
-  align-items: center;
+  width: 24px;
+  height: 24px;
   fill: #fff;
 }/*# sourceMappingURL=portfolio.css.map */
