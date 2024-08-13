@@ -27,6 +27,10 @@
      @media(min-width:1200px){
         text-align: left;
     }
+     @media(min-width:768px){
+        display: flex;
+        justify-content: center;
+    }
     color: getColor("studio-blue");
 
 

@@ -3,27 +3,25 @@
   background-color: getColor("studio-black");
   padding: 118px 0;
   flex-wrap: wrap;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/desc-images/deschero1x.jpg");
-    @media (min-width:320px){
+ 
+
+     
+    @media (min-width:320px), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution:2dppx) {
+      background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ), url("../images/mob-images/mobhero2x.jpg");
+    }
+    @media (min-width:320px) {
       background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ), url("../images/mob-images/mobhero1x.jpg");
-    
-      @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution:2dppx){
-        background-image: linear-gradient(
-          to right,
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ), url("../images/mob-images/m2ximages/mobhero2x.jpg");
-        }
     }
+       
+    
     @media (min-width:768px){
       background-image:linear-gradient(
         to right,
