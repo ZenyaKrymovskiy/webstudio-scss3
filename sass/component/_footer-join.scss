@@ -5,7 +5,7 @@
        margin-right: 92px;
         }
 }
-    .footer-join__titl{
+    .footer-join__title{
         text-align: center;
         font-family: getFont("font-roboto") ;
     font-weight: 700;
@@ -14,6 +14,9 @@
     text-transform: uppercase;
     color: getColor("studio-white");
     margin-bottom: 23px;
+    @media(min-width: 1200px){
+        text-align: left;
+    }
    
     }
 

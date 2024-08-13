@@ -689,18 +689,18 @@ ul, h2, p, h3, h1, button, figure {
   }
 }
 .footer .container .footer-contacts__logo {
-  text-align: center;
   color: #2196F3;
-}
-@media (min-width: 1200px) {
-  .footer .container .footer-contacts__logo {
-    text-align: left;
-  }
 }
 @media (min-width: 768px) {
   .footer .container .footer-contacts__logo {
     display: flex;
     justify-content: center;
+  }
+}
+@media (min-width: 1200px) {
+  .footer .container .footer-contacts__logo {
+    display: flex;
+    justify-content: flex-start;
   }
 }
 .footer .container .footer-contacts__logo--studio {
@@ -752,7 +752,7 @@ ul, h2, p, h3, h1, button, figure {
   }
 }
 
-.footer-join__titl {
+.footer-join__title {
   text-align: center;
   font-family: Roboto, sans-serif;
   font-weight: 700;
@@ -761,6 +761,11 @@ ul, h2, p, h3, h1, button, figure {
   text-transform: uppercase;
   color: #fff;
   margin-bottom: 23px;
+}
+@media (min-width: 1200px) {
+  .footer-join__title {
+    text-align: left;
+  }
 }
 
 .social-networks-list {
